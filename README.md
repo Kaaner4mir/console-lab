@@ -5,22 +5,24 @@
 ---
 
 ### 🔧 Technologies & Tools
-<img src="Icons/CSharp.svg" alt="CSharp" width="80"/>
-<img src="Icons/Dotnet.svg" alt=".NET" width="80"/>
-<img src="Icons/VSCode.svg" alt="VSCode" width="80"/>
-<img src="Icons/VS2022.svg" alt="VS2022" width="80"/>
-<img src="Icons/Git.svg" alt="Git" width="80"/>
-<img src="Icons/Github.svg" alt="GitHub" width="80"/>
-<img src="Icons/Gitkraken.svg" alt="GitKraken" width="80"/>
+<div style="display: flex; gap: 10px; align-items: center;">
+  <img src="Icons/CSharp.svg" alt="CSharp" width="80"/>
+  <img src="Icons/Dotnet.svg" alt=".NET" width="80"/>
+  <img src="Icons/VSCode.svg" alt="VSCode" width="80"/>
+  <img src="Icons/VS2022.svg" alt="VS2022" width="80"/>
+  <img src="Icons/Git.svg" alt="Git" width="80"/>
+  <img src="Icons/Github.svg" alt="GitHub" width="80"/>
+  <img src="Icons/Gitkraken.svg" alt="GitKraken" width="80"/>
+</div>
 
 ---
 
 ## 📂 Repository Structure
 ```
 ConsoleLab/
-├── Icons/                # Technology icons in SVG format
-├── Projects/             # Folder for all console projects
-├── README.md             # Repository overview
+├── Icons/               
+├── Projects/             
+├── README.md             
 └── .gitignore
 ```
 
