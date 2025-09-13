@@ -69,24 +69,7 @@ dotnet run
 
 ## 📖 Usage
 
-### Main Menu
-```
------ 🧮 Elementary Mathematics -----
- 1. Addition           
- 2. Subtraction        
- 3. Multiplication     
- 4. Division           
- ----- 🔢 Advanced Mathematics -----
- 5. Exponentiation     
- 6. Root Extraction    
- 7. Factorial          
- 8. Modulo             
- 9. Logarithm          
-10. Trigonometry       
- ----- 💾 Memory Operations -----
-11. Memory Operations  
-12. Exit
-```
+![Menu Icon](Icons/Menu.png)
 
 ### Usage Examples
 
@@ -110,19 +93,7 @@ Result: 💡 Memory : 100
 
 ## 🏗️ Project Structure
 
-AdvancedCalculator/
-├── Operations/                
-│   ├── Advanced.cs            
-│   ├── Elementary.cs           
-│   └── Memory.cs               
-│
-├── UI/                     
-│   ├── ConsoleHelper.cs     
-│   └── Menu.cs                
-│
-├── Initializer.cs              
-├── AdvancedCalculator.csproj   
-└── README.md                   
+![Operations Icon](Icons/Files.png)               
 
 ## 🔧 Technical Details
 
