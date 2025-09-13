@@ -69,7 +69,8 @@ dotnet run
 
 ## 📖 Usage
 
-![Menu Icon](./ConsoleLab/Icons/Menu.png)
+
+![Files Icon](Icons/Files.png)
 
 ### Usage Examples
 
