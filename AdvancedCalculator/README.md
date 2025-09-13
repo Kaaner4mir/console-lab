@@ -69,8 +69,7 @@ dotnet run
 
 ## 📖 Usage
 
-
-![Files Icon](Icons/Files.png)
+![Files Icon](Images/Menu.png)
 
 ### Usage Examples
 
@@ -94,7 +93,7 @@ Result: 💡 Memory : 100
 
 ## 🏗️ Project Structure
 
-![Menu Icon](./ConsoleLab/Icons/Files.png)
+![Menu Icon](Images/Files.png)
              
 
 ## 🔧 Technical Details
