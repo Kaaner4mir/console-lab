@@ -18,6 +18,7 @@ class Startup
                 switch (choice)
                 {
                     case 1: Perimeter.PerimeterOperation(); break;
+                    case 2: Area.AreaOperation(); break;
                     default: ConsoleHelper.WriteColored("❓ The operation you attempted failed.", ConsoleColor.Yellow); break;
                 }
                 ConsoleHelper.WaitingScreen();
