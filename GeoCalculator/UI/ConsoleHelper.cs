@@ -42,5 +42,27 @@
         Console.CursorVisible = true;
     }
 
+    public static void SpinnerAnimation()
+    {
+        Console.CursorVisible = false;
+
+        Console.Clear();
+
+        char[] items = { '-', '\\', '|', '/' };
+
+        const short loopTime = 5;
+        const short loopDuration = 50;
+
+        for (int i = 0; i < loopTime; i++)
+        {
+            foreach (var item in items)
+            {
+                WriteColored($"\r{item}");
+                Thread.Sleep(loopDuration);
+                Console.Clear();
+            }
+        }
+        Console.CursorVisible = true;
+    }
 }
 
