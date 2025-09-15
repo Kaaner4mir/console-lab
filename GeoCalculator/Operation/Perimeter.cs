@@ -14,12 +14,12 @@
                 case 2: SquareCalculate(); break;
                 case 3: RectangleCalculate(); break;
                 case 4: OtherCalculate(); break;
+                default: ConsoleHelper.WriteColored("\n❓ The operation you attempted failed.", ConsoleColor.Yellow); break;
             }
         }
         catch (Exception exc)
         {
             ConsoleHelper.WriteColored($"\n⚠️ An error has occurred : {exc.Message}", ConsoleColor.Red);
-
         }
     }
 
