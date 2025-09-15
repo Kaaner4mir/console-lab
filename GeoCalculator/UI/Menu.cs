@@ -32,4 +32,22 @@
             ConsoleHelper.WriteColored(item.Text, item.Color);
         }
     }
+
+    public static void DisplayAreaMenu()
+    {
+        var mainMenuItems = new (string Text, ConsoleColor Color)[]
+        {
+            (" ----- ⭕ Area Calculation Menu -----\n", ConsoleColor.Cyan),
+            (" 1. Circle", ConsoleColor.Magenta),
+            (" 2. Triangle", ConsoleColor.Blue),
+            (" 3. Square", ConsoleColor.Red),
+            (" 4. Rectangle", ConsoleColor.Gray),
+            (" 5. Other", ConsoleColor.White),
+        };
+
+        foreach (var item in mainMenuItems)
+        {
+            ConsoleHelper.WriteColored(item.Text, item.Color);
+        }
+    }
 }
