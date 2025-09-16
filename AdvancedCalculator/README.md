@@ -51,8 +51,8 @@ A comprehensive console-based scientific calculator application. Developed in C#
 ### Step-by-Step Installation
 1. **Clone the Project**
 ```bash
-git clone https://github.com/Kaaner4mir/console-based-projects.git
-cd console-based-projects/ScientificCalculator
+git clone https://github.com/Kaaner4mir/console-lab.git
+cd console-lab/AdvancedCalculator
 ```
 2. **Install Dependencies**
 ```bash
@@ -94,7 +94,6 @@ Result: 💡 Memory : 100
 ## 🏗️ Project Structure
 
 ![Menu Icon](Images/Files.png)
-             
 
 ## 🔧 Technical Details
 
