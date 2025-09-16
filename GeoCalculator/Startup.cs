@@ -5,6 +5,7 @@ class Startup
     public static void Main()
     {
         Console.OutputEncoding = Encoding.UTF8;
+        Console.Title = "Geometric Calculator";
 
         try
         {

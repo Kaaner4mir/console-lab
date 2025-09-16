@@ -13,7 +13,7 @@
                 case 1: CircleCalculate(); break;
                 case 2: SquareCalculate(); break;
                 case 3: RectangleCalculate(); break;
-                case 4: OtherCalculate(); break;
+                case 4: PolygonCalculate(); break;
                 default: ConsoleHelper.WriteColored("\n❓ The operation you attempted failed.", ConsoleColor.Yellow); break;
             }
         }
@@ -23,78 +23,52 @@
         }
     }
 
+    // ----------------------- Circle -----------------------
     public static void CircleCalculate()
     {
-        double r = ConsoleHelper.GetInput<double>("\n📏 Enter radius : ");
-
-        if (r < 0)
-        {
-            ConsoleHelper.WriteColored("\n⛔ Please enter a valid value!", ConsoleColor.Yellow);
-            return;
-        }
+        double r = ConsoleHelper.GetInput<double>("\n📏 Enter the radius : ");
+        if (r < 0) { ConsoleHelper.WriteColored("\n⛔ Please enter a valid value!", ConsoleColor.Yellow); return; }
 
         double result = 2 * Math.PI * r;
         ShowResult(result);
     }
 
+    // ----------------------- Square -----------------------
     public static void SquareCalculate()
     {
-        double sideLenght = ConsoleHelper.GetInput<double>("\n📏 Enter the side length : ");
+        double side = ConsoleHelper.GetInput<double>("\n📏 Enter the side length : ");
+        if (side < 0) { ConsoleHelper.WriteColored("\n⛔ Please enter a valid value!", ConsoleColor.Yellow); return; }
 
-        if (sideLenght < 0)
-        {
-            ConsoleHelper.WriteColored("\n⛔ Please enter a valid value!", ConsoleColor.Yellow);
-            return;
-        }
-
-        double result = 4 * sideLenght;
+        double result = 4 * side;
         ShowResult(result);
     }
 
+    // ----------------------- Rectangle -----------------------
     public static void RectangleCalculate()
     {
-        double shortLenght = ConsoleHelper.GetInput<double>("\n📏 Enter the short side length : ");
+        double length = ConsoleHelper.GetInput<double>("\n📏 Enter the length : ");
+        double width = ConsoleHelper.GetInput<double>("\n📏 Enter the width : ");
 
-        if (shortLenght < 0)
-        {
-            ConsoleHelper.WriteColored("\n⛔ Please enter a valid value!", ConsoleColor.Yellow);
-            return;
-        }
-        double longLenght = ConsoleHelper.GetInput<double>("\n📏 Enter the long side length : ");
+        if (length < 0 || width < 0) { ConsoleHelper.WriteColored("\n⛔ Please enter valid values!", ConsoleColor.Yellow); return; }
 
-        if (longLenght < 0)
-        {
-            ConsoleHelper.WriteColored("\n⛔ Please enter a valid value!", ConsoleColor.Yellow);
-            return;
-        }
-
-        double result = 2 * shortLenght + 2 * longLenght;
+        double result = 2 * (length + width);
         ShowResult(result);
     }
 
-    public static void OtherCalculate()
+    // ----------------------- Regular Polygon / Other -----------------------
+    public static void PolygonCalculate()
     {
-        short numberOfEdges = ConsoleHelper.GetInput<short>("\n🔢 Enter the number of sides : ");
+        short numberOfSides = ConsoleHelper.GetInput<short>("\n🔢 Enter the number of sides : ");
+        if (numberOfSides <= 2) { ConsoleHelper.WriteColored("\n⛔ A polygon must have at least 3 sides!", ConsoleColor.Yellow); return; }
 
-        if (numberOfEdges < 0)
-        {
-            ConsoleHelper.WriteColored("\n⛔ Please enter a valid value!", ConsoleColor.Yellow);
-            return;
-        }
+        double sideLength = ConsoleHelper.GetInput<double>("\n📏 Enter the side length : ");
+        if (sideLength < 0) { ConsoleHelper.WriteColored("\n⛔ Please enter a valid value!", ConsoleColor.Yellow); return; }
 
-        short edgeLenght = ConsoleHelper.GetInput<short>("\n📏 Enter the side length : ");
-
-        if (edgeLenght < 0)
-        {
-            ConsoleHelper.WriteColored("\n⛔ Please enter a valid value!", ConsoleColor.Yellow);
-            return;
-        }
-
-        double result = numberOfEdges * edgeLenght;
-
+        double result = numberOfSides * sideLength;
         ShowResult(result);
     }
 
+    // ----------------------- Show Result -----------------------
     public static void ShowResult(double result)
     {
         ConsoleHelper.WriteColored($"\n✅ Perimeter of the shape : {result}", ConsoleColor.Green);

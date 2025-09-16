@@ -50,7 +50,7 @@
             ConsoleHelper.WriteColored(item.Text, item.Color);
         }
     }
-<<<<<<< HEAD
+
 
     public static void DisplayVolumeMenu()
     {
@@ -77,6 +77,5 @@
             ConsoleHelper.WriteColored(item.Text, item.Color);
         }
     }
-=======
->>>>>>> 4c978f365df4551f59cd3e74087c3de582cdd2b6
+
 }
