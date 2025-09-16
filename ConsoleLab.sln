@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedCalculator", "Advan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCalc", "GeoCalculator\GeoCalc.csproj", "{A5C9EB77-2E1C-4F09-886C-DC1FB494D6C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryTrackingSystem", "LibraryTrackingSystem\LibraryTrackingSystem.csproj", "{31A1C22E-B5FB-4311-8F71-BECF589C853A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A5C9EB77-2E1C-4F09-886C-DC1FB494D6C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5C9EB77-2E1C-4F09-886C-DC1FB494D6C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5C9EB77-2E1C-4F09-886C-DC1FB494D6C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31A1C22E-B5FB-4311-8F71-BECF589C853A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A1C22E-B5FB-4311-8F71-BECF589C853A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A1C22E-B5FB-4311-8F71-BECF589C853A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A1C22E-B5FB-4311-8F71-BECF589C853A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
