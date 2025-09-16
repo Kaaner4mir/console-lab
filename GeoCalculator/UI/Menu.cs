@@ -50,4 +50,30 @@
             ConsoleHelper.WriteColored(item.Text, item.Color);
         }
     }
+
+    public static void DisplayVolumeMenu()
+    {
+        var mainMenuItems = new (string Text, ConsoleColor Color)[]
+       {
+            (" ----- ⭕ Volume Calculation Menu -----\n", ConsoleColor.Cyan),
+            (" 1. Cube", ConsoleColor.White),
+            (" 2. Rectangular Prism", ConsoleColor.Gray),
+            (" 3. Square Prism", ConsoleColor.DarkGray),
+            (" 4. General Prism", ConsoleColor.Yellow),
+            (" 5. Cylinder", ConsoleColor.DarkYellow),
+            (" 6. Cone", ConsoleColor.Red),
+            (" 7. Frustum of a cone", ConsoleColor.DarkRed),
+            (" 8. Sphere", ConsoleColor.Green),
+            (" 9. Spherical Sector", ConsoleColor.DarkGreen),
+            ("10. Spherical Cap", ConsoleColor.Blue),
+            ("11. Square Pyramid", ConsoleColor.DarkBlue),
+            ("12. Rectangular Pyramid", ConsoleColor.Magenta),
+            ("13. General Pyramid", ConsoleColor.DarkMagenta),
+       };
+
+        foreach (var item in mainMenuItems)
+        {
+            ConsoleHelper.WriteColored(item.Text, item.Color);
+        }
+    }
 }

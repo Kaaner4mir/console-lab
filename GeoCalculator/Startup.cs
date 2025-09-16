@@ -19,6 +19,7 @@ class Startup
                 {
                     case 1: Perimeter.PerimeterOperation(); break;
                     case 2: Area.AreaOperation(); break;
+                    case 3: Volume.VolumeOperation(); break;
                     default: ConsoleHelper.WriteColored("❓ The operation you attempted failed.", ConsoleColor.Yellow); break;
                 }
                 ConsoleHelper.WaitingScreen();
