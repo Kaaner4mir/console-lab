@@ -75,10 +75,10 @@ dotnet run
 
 ## Other Menus
 
-![Files Icon](Images/PerimeterMenu.png)
-![Files Icon](Images/AreaMenu.png)
-![Files Icon](Images/VolumeMenu.png)
-![Files Icon](Images/MainMenu.png)
+<img src="Images/PerimeterMenu.png" alt="Perimeter Menu" width="400"/>
+<img src="Images/AreaMenu.png" alt="Area Menu" width="400"/>
+<img src="Images/VolumeMenu.png" alt="Volume Menu" width="400"/>
+<img src="Images/MainMenu.png" alt="Main Menu Again" width="400"/>
 
 ## 🏗️ Project Structure
 
