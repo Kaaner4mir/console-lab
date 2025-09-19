@@ -20,6 +20,7 @@ class Initializer
                     case 1: DataStore.List(); break;
                     case 2: AddBook.Add(); break;
                     case 3: UpdateBook.Update(); break;
+                    case 4: RemoveBook.Remove(); break;
                     default: ConsoleHelper.WriteColored("\n❓ The operation you want to perform could not be found!", ConsoleColor.Yellow); break;
                 }
                 ConsoleHelper.WaitingScreen();
