@@ -1,7 +1,7 @@
-﻿class DataStore
+﻿static class DataStore
 {
-    static List<Book> _books = new List<Book>
-        {
+    public static List<Book> books { get; set; } = new List<Book>
+    {
           new Book { BookId = Random.Shared.Next(100000,999999), BookName = "The Great Gatsby", Author = "F. Scott Fitzgerald", Publisher = "Scribner", PublicationYear = "1925", Genre = "Novel", Language = "English", PageCount = "218" },
           new Book { BookId = Random.Shared.Next(100000,999999), BookName = "To Kill a Mockingbird", Author = "Harper Lee", Publisher = "J.B. Lippincott & Co.", PublicationYear = "1960", Genre = "Novel", Language = "English", PageCount = "336" },
           new Book { BookId = Random.Shared.Next(100000,999999), BookName = "The Catcher in the Rye", Author = "J.D. Salinger", Publisher = "Little, Brown and Company", PublicationYear = "1951", Genre = "Novel", Language = "English", PageCount = "277" },
@@ -34,13 +34,19 @@
           new Book { BookId = Random.Shared.Next(100000,999999), BookName = "The Secret Garden", Author = "Frances Hodgson Burnett", Publisher = "Frederick A. Stokes", PublicationYear = "1911", Genre = "Children's", Language = "English", PageCount = "331" },
           new Book { BookId = Random.Shared.Next(100000,999999), BookName = "Anne of Green Gables", Author = "L.M. Montgomery", Publisher = "L.C. Page & Co.", PublicationYear = "1908", Genre = "Children's", Language = "English", PageCount = "320" },
           new Book { BookId = Random.Shared.Next(100000,999999), BookName = "Peter Pan", Author = "J.M. Barrie", Publisher = "Hodder & Stoughton", PublicationYear = "1911", Genre = "Fantasy", Language = "English", PageCount = "223" }
-        };
+
+    };
+
+    public static List<Book> ExampleBooks()
+    {
+        return books;
+    }
 
     public static void List()
     {
-        Console.WriteLine("\x1b[2J");
+        Console.Clear();
 
-        foreach (var item in _books)
+        foreach (var item in ExampleBooks())
         {
             ConsoleHelper.WriteColored($"🔑 Book ID        : {item.BookId}", ConsoleColor.Yellow);
             ConsoleHelper.WriteColored($"🏷️ Book Name      : {item.BookName}", ConsoleColor.Cyan);
@@ -50,7 +56,6 @@
             ConsoleHelper.WriteColored($"🎭 Genre          : {item.Genre}", ConsoleColor.Green);
             ConsoleHelper.WriteColored($"🌐 Language       : {item.Language}", ConsoleColor.DarkMagenta);
             ConsoleHelper.WriteColored($"📆 Page Count     : {item.PageCount}", ConsoleColor.DarkGray);
-
             ConsoleHelper.WriteColored(new string('-', 50), ConsoleColor.Gray);
         }
     }
